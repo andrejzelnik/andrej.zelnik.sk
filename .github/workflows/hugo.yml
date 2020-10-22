@@ -6,7 +6,8 @@ on:
       - main  # Set a branch to deploy
 
 jobs:
-  deploy:
+  build-and-deploy:
+    name: Build and deploy
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -28,3 +29,4 @@ jobs:
         with:
           source-path: ./public
           sas-url: ${{ secrets.DEPLOY_SAS_URL }}
+          container: $web
