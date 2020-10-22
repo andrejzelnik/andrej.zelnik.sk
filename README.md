@@ -36,6 +36,15 @@ Modify `config.toml` and remove [this line](https://github.com/jakewies/hugo-the
 sed '/themesDir/d' config.toml > temp && mv temp config.toml
 ```
 
+Copy the source files:
+
+```bash
+cp -R ./themes/hugo-theme-codex/archetypes/ ./archetypes
+cp -R ./themes/hugo-theme-codex/assets/ ./assets
+cp -R ./themes/hugo-theme-codex/layouts/ ./layouts
+cp -R ./themes/hugo-theme-codex/static/ ./static
+```
+
 Configure the homepage:
 
 ```bash
@@ -77,14 +86,7 @@ font color:         #fff
 background color:   #000
 ```
 
-Download and copy the content into `./content` folder.
-
-Copy `index.html` and `404.html` into `./layouts`:
-
-```
-cp ./themes/hugo-theme-codex/layouts/index.html ./layouts
-cp ./themes/hugo-theme-codex/layouts/404.html ./layouts
-```
+Download and copy the content into `./static` folder.
 
 Modify `config.toml` based on your needs and finally run:
 
