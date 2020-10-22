@@ -29,7 +29,7 @@ jobs:
 
       - name: Deploy to Azure storage account
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        uses: TravisSpomer/deploy-to-azure-storage@v1.1
+        uses: TravisSpomer/deploy-to-azure-storage@v1
         with:
           source-path: ./public
           sas-url: ${{ secrets.DEPLOY_SAS_URL }}
