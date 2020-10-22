@@ -91,3 +91,9 @@ Modify `config.toml` based on your needs and finally run:
 ```bash
 hugo server -D
 ```
+
+## github actions
+
+see:
+- https://github.com/marketplace/actions/hugo-setup
+- https://github.com/marketplace/actions/deploy-to-azure-storage
