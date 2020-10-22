@@ -3,7 +3,10 @@ name: Hugo simple web app CI/CD
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - master
+    paths-ignore:
+      - 'README.md'
+  pull_request:
 
 jobs:
   build-and-deploy:
@@ -22,10 +25,11 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --debug
 
       - name: Deploy to Azure storage account
-        uses: TravisSpomer/deploy-to-azure-storage@v1.1
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        uses: TravisSpomer/deploy-to-azure-storage@v1
         with:
           source-path: ./public
           sas-url: ${{ secrets.DEPLOY_SAS_URL }}
