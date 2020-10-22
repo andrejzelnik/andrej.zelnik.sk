@@ -39,19 +39,51 @@ sed '/themesDir/d' config.toml > temp && mv temp config.toml
 Configure the homepage:
 
 ```bash
-cat <<EOF > content/_index.md
+cat <<EOF > ./content/_index.md
 ---
 heading: "Hi, I'm Andrej"
-subheading: "A minimal blog theme for hugo."
-handle: "hugo-theme-codex"
+subheading: "• minimal site • maximal life •"
+handle: "zelnik.sk"
 ---
 EOF
 ```
 
 ```bash
-cat <<EOF >> ./themes/hugo-theme-codex/assets/scss/overrides.scss
+mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/custom.scss
+// custom.scss
+.splash {
+    h2 {
+        font-size: 1.5em;
+    }
+}
+EOF
+```
+```bash
+mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/overrides.scss
+// overrides.scss
+\$navWidth: 1px;
 \$primary: #88b04b;
 EOF
+```
+
+Favicon generator: https://favicon.io/favicon-generator/
+
+```
+text:               a
+background:         rounded
+font family:        Fugaz One
+font size:          125
+font color:         #fff
+background color:   #000
+```
+
+Download and copy the content into `./content` folder.
+
+Copy `index.html` and `404.html` into `./layouts`:
+
+```
+cp ./themes/hugo-theme-codex/layouts/index.html ./layouts
+cp ./themes/hugo-theme-codex/layouts/404.html ./layouts
 ```
 
 Modify `config.toml` based on your needs and finally run:
