@@ -65,6 +65,14 @@ mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/custom.scss
         font-size: 1.5em;
     }
 }
+
+.social-icons__link {
+    padding: 1.33rem;
+}
+
+.main {
+    height: 100%;
+}
 EOF
 ```
 ```bash
