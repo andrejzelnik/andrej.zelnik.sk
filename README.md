@@ -71,18 +71,21 @@ mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/custom.scss
 }
 
 .social-icons {
-    //display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
 }
 
 .social-icons__link {
-    //padding: 0.82rem;
     padding: 0.2rem 1rem;
 
     &:not(:last-child) {
         margin: 0;
+    }
+
+    .social-icons__icon {
+        -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+        filter: invert(100%);
     }
 }
 EOF
@@ -95,6 +98,8 @@ mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/overrides.scss
 \$meatHeight: 0;
 \$burgerContainerHeight: 0;
 
+\$black: #fff;
+\$white: #111;
 \$primary: #88b04b;
 EOF
 ```

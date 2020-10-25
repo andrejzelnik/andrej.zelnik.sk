@@ -1,1 +1,1 @@
-.main{height:100%}.splash h2{font-size:1.5em}.social-icons{justify-content:center;align-items:center;margin:0}.social-icons__link{padding:.2rem 1rem}.social-icons__link:not(:last-child){margin:0}
+.main{height:100%}.splash h2{font-size:1.5em}.social-icons{justify-content:center;align-items:center;margin:0}.social-icons__link{padding:.2rem 1rem}.social-icons__link:not(:last-child){margin:0}.social-icons__link .social-icons__icon{-webkit-filter:invert(100%);filter:invert(100%)}
