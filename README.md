@@ -60,25 +60,41 @@ EOF
 ```bash
 mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/custom.scss
 // custom.scss
+.main {
+    height: 100%;
+}
+
 .splash {
     h2 {
         font-size: 1.5em;
     }
 }
 
-.social-icons__link {
-    padding: 1.33rem;
+.social-icons {
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.main {
-    height: 100%;
+.social-icons__link {
+    //padding: 0.82rem;
+    padding: 0.2rem 1rem;
+
+    &:not(:last-child) {
+        margin: 0;
+    }
 }
 EOF
 ```
 ```bash
 mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/overrides.scss
 // overrides.scss
-\$navWidth: 1px;
+\$navWidth: 0;
+\$meatWidth: 0;
+\$meatHeight: 0;
+\$burgerContainerHeight: 0;
+
 \$primary: #88b04b;
 EOF
 ```

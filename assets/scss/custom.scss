@@ -1,14 +1,24 @@
 // custom.scss
+.main {
+    height: 100%;
+}
+
 .splash {
     h2 {
         font-size: 1.5em;
     }
 }
 
-.social-icons__link {
-    padding: 1.33rem;
+.social-icons {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.main {
-    height: 100%;
+.social-icons__link {
+    padding: 0.2rem 1rem;
+
+    &:not(:last-child) {
+        margin: 0;
+    }
 }
