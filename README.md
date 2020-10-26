@@ -1,4 +1,4 @@
-# andrej-site-content
+# site-content-andrej
 
 Minimalist content generator for my personal [andrej.zelnik.sk](https://andrej.zelnik.sk) website.
 
