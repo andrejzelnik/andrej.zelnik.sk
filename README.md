@@ -100,7 +100,8 @@ mkdir -p ./assets/scss && cat <<EOF > ./assets/scss/overrides.scss
 
 \$black: #fff;
 \$white: #111;
-\$primary: #88b04b;
+\$primary: #d4ff47;
+//\$primary: #88b04b;
 EOF
 ```
 
