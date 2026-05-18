@@ -21,4 +21,4 @@ To enable deployment on a fresh fork, go to **Settings → Pages → Source** an
 
 ## Accent colour
 
-The purple dot after the heading (`h1 .dot`) uses `#9013fe`. This is the only brand colour.
+The dot after the heading (`h1 .dot`) uses `#88b04b` (PANTONE 15-0343 Greenery, Pantone Colour of the Year 2017). This is the only brand colour.
