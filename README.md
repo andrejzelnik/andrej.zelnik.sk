@@ -8,7 +8,7 @@ Open `index.html` directly in a browser.
 
 ## Deploy
 
-Push to `master` — GitHub Actions deploys to GitHub Pages automatically.
+Push to `main` — GitHub Actions deploys to GitHub Pages automatically.
 
 To enable on a fresh fork: **Settings → Pages → Source → GitHub Actions**.
 

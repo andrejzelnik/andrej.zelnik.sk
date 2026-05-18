@@ -8,7 +8,7 @@ A plain HTML/CSS personal landing page for [andrej.zelnik.sk](https://andrej.zel
 
 ## Deployment
 
-Pushing to `master` triggers `.github/workflows/deploy.yml`, which uploads the repo root to GitHub Pages. The custom domain is set by `CNAME`. There is no local build command — open `index.html` directly in a browser to preview.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which uploads the repo root to GitHub Pages. The custom domain is set by `CNAME`. There is no local build command — open `index.html` directly in a browser to preview.
 
 To enable deployment on a fresh fork, go to **Settings → Pages → Source** and select **GitHub Actions**.
 
