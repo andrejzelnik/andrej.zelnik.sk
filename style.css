@@ -34,7 +34,7 @@ main {
 }
 
 h1 {
-  font-size: 2.121rem;
+  font-size: 2.5rem;
   line-height: 1.3;
 }
 
@@ -45,19 +45,19 @@ h1 {
 .handle {
   display: block;
   color: #9b9b9b;
-  font-size: 0.9rem;
-  margin-top: 0.4rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 .subheading {
-  margin-top: 0.75rem;
-  font-size: 1.414rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   gap: 0.5rem;
 }
 
